@@ -1,0 +1,54 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait  .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left  { width: 55%; }
+.mode-landscape .sl-right { width: 45%; }
+.mode-portrait  .sl-left  { width: 100%; flex: 1; }
+.mode-portrait  .sl-right { width: 100%; height: 38%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: content panel -->
+    <div class="sl-left flex flex-col justify-between p-12 bg-slate-900">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-indigo-500 bg-opacity-20 border border-indigo-400 border-opacity-40 rounded-full px-4 py-1 mb-8">
+          <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+          <span class="text-indigo-300 text-xs font-semibold tracking-widest uppercase">AI-Powered · Password Security</span>
+        </div>
+        <h1 class="text-5xl font-black text-white leading-tight mb-6">
+          Fight for Your<br>Digital Security
+        </h1>
+        <p class="text-slate-300 text-lg leading-relaxed" style="max-width:26rem">
+          Fighter Password generates, stores, and protects strong unique passwords for every account — so you never need to remember or reuse a weak password again.
+        </p>
+      </div>
+      <div class="flex items-end justify-between">
+        <data-attribution />
+        <span class="text-slate-600 text-xs tracking-wide">fighterpassword.app</span>
+      </div>
+    </div>
+
+    <!-- Right: visual panel -->
+    <div class="sl-right relative overflow-hidden bg-indigo-950 flex flex-col items-center justify-center gap-6 p-10">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=glowing+blue+digital+shield+lock+cybersecurity+dark+indigo+background+abstract+premium"
+        class="absolute inset-0 w-full h-full object-cover opacity-30"
+        alt=""
+      />
+      <div class="relative z-10 flex flex-col items-center gap-4 text-center">
+        <div class="w-24 h-24 rounded-2xl bg-indigo-500 bg-opacity-30 border border-indigo-400 border-opacity-50 flex items-center justify-center text-5xl shadow-xl">🔐</div>
+        <div class="text-white text-3xl font-black tracking-tight">Fighter Password</div>
+        <div class="text-indigo-300 text-sm tracking-widest uppercase">Never get breached again</div>
+      </div>
+      <!-- Floating credential chips -->
+      <div class="relative z-10 flex flex-wrap gap-2 justify-center" style="max-width:16rem">
+        <span class="bg-white bg-opacity-10 border border-white border-opacity-20 text-white text-xs px-3 py-1 rounded-full">Banking ✓</span>
+        <span class="bg-white bg-opacity-10 border border-white border-opacity-20 text-white text-xs px-3 py-1 rounded-full">Social ✓</span>
+        <span class="bg-white bg-opacity-10 border border-white border-opacity-20 text-white text-xs px-3 py-1 rounded-full">Work ✓</span>
+        <span class="bg-white bg-opacity-10 border border-white border-opacity-20 text-white text-xs px-3 py-1 rounded-full">Shopping ✓</span>
+      </div>
+    </div>
+
+  </div>
+</section>
