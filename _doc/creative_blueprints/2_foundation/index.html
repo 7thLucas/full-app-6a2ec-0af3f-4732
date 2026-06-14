@@ -1,0 +1,82 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; gap: 0; }
+.mode-portrait  .sl-layout { flex-direction: column; }
+.mode-landscape .sl-problem  { width: 50%; }
+.mode-landscape .sl-solution { width: 50%; }
+.mode-portrait  .sl-problem  { flex: 1; }
+.mode-portrait  .sl-solution { flex: 1; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Problem -->
+    <div class="sl-problem flex flex-col justify-between p-12 bg-slate-50 border-r border-slate-200">
+      <div>
+        <div class="flex items-center gap-2 mb-6">
+          <span class="w-3 h-3 rounded-full bg-red-500"></span>
+          <span class="text-red-600 text-xs font-bold tracking-widest uppercase">The Problem</span>
+        </div>
+        <h2 class="text-3xl font-black text-slate-900 leading-tight mb-6">One weak password<br>puts everything<br>at risk.</h2>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 border border-red-100 shadow-sm">
+            <span class="text-2xl mt-0.5">♻️</span>
+            <div>
+              <div class="text-slate-800 font-semibold text-sm">Password reuse is endemic</div>
+              <div class="text-slate-500 text-xs mt-1">Most people use the same password across 5+ sites — one breach exposes all of them.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 border border-red-100 shadow-sm">
+            <span class="text-2xl mt-0.5">🧠</span>
+            <div>
+              <div class="text-slate-800 font-semibold text-sm">Human memory can't keep up</div>
+              <div class="text-slate-500 text-xs mt-1">The average person manages 80+ online accounts. Remembering unique, strong passwords for each is impossible.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 border border-red-100 shadow-sm">
+            <span class="text-2xl mt-0.5">⏱️</span>
+            <div>
+              <div class="text-slate-800 font-semibold text-sm">Password resets waste time</div>
+              <div class="text-slate-500 text-xs mt-1">Forgotten passwords trigger reset flows that average 10 minutes — every single time.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solution -->
+    <div class="sl-solution flex flex-col justify-between p-12 bg-indigo-950">
+      <div>
+        <div class="flex items-center gap-2 mb-6">
+          <span class="w-3 h-3 rounded-full bg-indigo-400"></span>
+          <span class="text-indigo-300 text-xs font-bold tracking-widest uppercase">The Solution</span>
+        </div>
+        <h2 class="text-3xl font-black text-white leading-tight mb-6">Fighter Password<br>fights back — so<br>you don't have to.</h2>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-start gap-3 bg-white bg-opacity-10 rounded-xl p-4 border border-white border-opacity-10">
+            <span class="text-2xl mt-0.5">🤖</span>
+            <div>
+              <div class="text-white font-semibold text-sm">AI generates the perfect password</div>
+              <div class="text-indigo-200 text-xs mt-1">Strong, unique, and tailored to each site's requirements — generated in under 5 seconds.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 bg-white bg-opacity-10 rounded-xl p-4 border border-white border-opacity-10">
+            <span class="text-2xl mt-0.5">🔒</span>
+            <div>
+              <div class="text-white font-semibold text-sm">Encrypted vault stores everything</div>
+              <div class="text-indigo-200 text-xs mt-1">AES-256 encrypted, local-first storage. Only you can access your vault.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 bg-white bg-opacity-10 rounded-xl p-4 border border-white border-opacity-10">
+            <span class="text-2xl mt-0.5">🚨</span>
+            <div>
+              <div class="text-white font-semibold text-sm">Breach alerts keep you ahead</div>
+              <div class="text-indigo-200 text-xs mt-1">Instant notifications if any saved password appears in a public data breach.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-indigo-400 text-xs mt-6">Security-first · No tracking · No plain-text storage</div>
+    </div>
+
+  </div>
+</section>
