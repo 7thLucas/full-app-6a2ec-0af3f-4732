@@ -1,0 +1,91 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-6">
+
+    <!-- Header -->
+    <div>
+      <div class="text-indigo-600 text-xs font-bold tracking-widest uppercase mb-2">North Star Metric</div>
+      <h2 class="text-4xl font-black text-slate-900">Weekly Passwords Secured</h2>
+      <p class="text-slate-500 text-sm mt-2">The single number Fighter Password lives by — verified operations (passwords generated &amp; saved) completed by real users each week.</p>
+    </div>
+
+    <!-- Verified operation definition -->
+    <div class="bg-indigo-50 border border-indigo-200 rounded-2xl p-6">
+      <div class="text-indigo-700 text-xs font-bold tracking-widest uppercase mb-3">Verified Operation</div>
+      <div class="flex items-start gap-3">
+        <span class="text-2xl">🔐</span>
+        <div>
+          <div class="text-slate-900 font-bold text-base">Password Secured</div>
+          <div class="text-slate-600 text-xs mt-1">A user successfully generates (or checks) and saves a strong unique password for an account in their vault. Clicks, logins, and page views are not operations.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WVO Projection -->
+    <div class="flex gap-4 flex-1">
+
+      <!-- Formula -->
+      <div class="flex-1 bg-slate-900 rounded-2xl p-6 text-white flex flex-col gap-4">
+        <div class="text-slate-400 text-xs font-bold tracking-widest uppercase">Weekly Projection · Formula</div>
+
+        <div class="flex flex-col gap-3 text-sm">
+          <div class="flex items-center justify-between bg-white bg-opacity-5 rounded-xl px-4 py-3 border border-white border-opacity-10">
+            <span class="text-slate-300">Active users</span>
+            <span class="flex items-center gap-2">
+              <span class="bg-amber-500 bg-opacity-20 text-amber-300 text-xs px-2 py-0.5 rounded-full font-semibold">Assumption — adjust this</span>
+              <span class="text-white font-bold">100 users</span>
+            </span>
+          </div>
+          <div class="flex items-center justify-between bg-white bg-opacity-5 rounded-xl px-4 py-3 border border-white border-opacity-10">
+            <span class="text-slate-300">Passwords secured per user / week</span>
+            <span class="flex items-center gap-2">
+              <span class="bg-amber-500 bg-opacity-20 text-amber-300 text-xs px-2 py-0.5 rounded-full font-semibold">Assumption — adjust this</span>
+              <span class="text-white font-bold">3 / week</span>
+            </span>
+          </div>
+          <div class="flex items-center justify-between bg-indigo-600 bg-opacity-30 rounded-xl px-4 py-3 border border-indigo-400 border-opacity-40">
+            <span class="text-slate-200 font-semibold">100 users × 3 passwords / week =</span>
+            <span class="text-indigo-300 font-black text-xl">300 WVO / wk</span>
+          </div>
+        </div>
+
+        <div class="text-slate-500 text-xs mt-auto">Projected impact — based on your inputs</div>
+      </div>
+
+      <!-- Value & ROI -->
+      <div class="flex-1 flex flex-col gap-4">
+
+        <div class="flex-1 bg-white border-2 border-indigo-100 rounded-2xl p-6 flex flex-col gap-3">
+          <div class="text-slate-500 text-xs font-bold tracking-widest uppercase">Value per Operation</div>
+          <div class="text-slate-600 text-sm leading-relaxed">
+            Each password secured eliminates an average reset event (10 min) every ~6 months:<br>
+            <span class="font-mono text-slate-800 text-xs bg-slate-100 px-2 py-1 rounded mt-2 inline-block">
+              1 op × 10 min × $20/hr ÷ 26 wks ≈ <strong>$0.13 / op / wk</strong>
+            </span>
+          </div>
+          <div class="flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-xl px-3 py-2 text-amber-700 text-xs mt-1">
+            <span>⚠️</span>
+            <span>Assumption — adjust this: $20/hr user value</span>
+          </div>
+        </div>
+
+        <div class="bg-indigo-600 rounded-2xl p-6 text-white flex flex-col gap-2">
+          <div class="text-indigo-200 text-xs font-bold tracking-widest uppercase">Projected Total Value</div>
+          <div class="flex items-end gap-4">
+            <div>
+              <div class="text-slate-200 text-xs">Per week</div>
+              <div class="text-2xl font-black">300 × $0.13 = <span class="text-indigo-200">~$39</span></div>
+            </div>
+            <div class="w-px h-10 bg-indigo-400 bg-opacity-40"></div>
+            <div>
+              <div class="text-slate-200 text-xs">Per year (×52)</div>
+              <div class="text-2xl font-black text-white">~$2,028</div>
+            </div>
+          </div>
+          <div class="text-indigo-300 text-xs mt-1">Projected impact — based on your inputs. Replace assumption chips with real numbers to update.</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
